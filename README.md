@@ -28,7 +28,7 @@ Match all the cards! When you've matched every pair, press "Stop Game" to stop t
 
 ## live Demo
 
-you can fine the game online on [Netlify](https://b-pokemon-memory-game.netlify.app/)
+you can find the game online on [Netlify](https://b-pokemon-memory-game.netlify.app/)
 
 > I hope you like it 😊 . Enjoy!
 
