@@ -4,6 +4,11 @@
 
 The Pokémon Memory Card Game is a classic puzzle game where players try to find matching pairs of Pokémon cards.
 
+### Screenshot
+
+![screenshot](./pokemon1.png)
+![screenshot](./pokemon2.png)
+
 ### How to Play
 
 1. Press on start Game.
