@@ -26,6 +26,10 @@ The game is won when all cards have been matched, and the player has the most po
 
 Match all the cards! When you've matched every pair, press "Stop Game" to stop the timer and get your result.
 
+## live Demo
+
+you can fine the game online on [Netlify](https://b-pokemon-memory-game.netlify.app/)
+
 > I hope you like it 😊 . Enjoy!
 
 ![pokémon](https://gifdb.com/images/high/yay-cheers-happy-pokemon-anime-jump-mefbh2zrslsma3sy.gif)
