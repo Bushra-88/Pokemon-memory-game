@@ -2,7 +2,6 @@ const moves = document.getElementById("moves-count");
 const timeValue = document.getElementById("time");
 const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
-const resumeButton = document.getElementById("resume");
 const gameContainer = document.querySelector(".game-container");
 const result = document.getElementById("result");
 const controls = document.querySelector(".control-container");
@@ -168,7 +167,7 @@ startButton.addEventListener("click", () => {
   controls.classList.add("hide");
   stopButton.classList.remove("hide");
   startButton.classList.add("hide");
-  resumeButton.classList.add("hide");
+
   gameInstructions.classList.add("hide");
   //Start timer
   interval = setInterval(timeGenerator, 1000);
@@ -183,11 +182,9 @@ stopButton.addEventListener("click", () => {
   if (winCount === Math.floor(cards.length / 2)) {
     // When the game has been won, keep instructions hidden
     gameInstructions.classList.add("hide");
-    resumeButton.classList.add("hide");
   } else {
     // When the game has not been won, show instructions
     gameInstructions.classList.remove("hide");
-    resumeButton.classList.remove("hide");
   }
   // Set the game state to stop
   controls.classList.remove("hide"); // Show control container
@@ -196,15 +193,6 @@ stopButton.addEventListener("click", () => {
   clearInterval(interval); // Stop the timer
 });
 
-//Resume Game
-resumeButton.addEventListener("click", () => {
-  controls.classList.add("hide"); // Hide control container
-  stopButton.classList.remove("hide"); // Show stop button
-  resumeButton.classList.add("hide"); // Hide resume button
-  gameInstructions.classList.add("hide"); // Hide instructions
-  //Resume timer
-  interval = setInterval(timeGenerator, 1000);
-});
 // Initialize values and function calls
 const initializer = () => {
   result.innerText = "";
